@@ -1,0 +1,1 @@
+worker: python samacharbot2.py
