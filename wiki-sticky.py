@@ -5,14 +5,14 @@ import time
 import praw
 import prawcore
 
-SUBRDT = os.environ['SUBRDT']         # Subreddit name
-WIKIPG = os.environ['WIKIPG']         # Name of wiki page with URL list
-TIMING = 5          # Minutes between sticky updates
+SUBRDT = os.environ['SUBRDT']
+WIKIPG = os.environ['WIKIPG']
+TIMING = 5
 
-BOT_UN = os.environ['BOT_UN']         # Bot username
-BOT_PW = os.environ['BOT_PW']         # Bot password
-CLI_ID = os.environ['CLI_ID']         # Client ID
-CLI_SC = os.environ['CLI_SC']         # Client secret
+BOT_UN = os.environ['BOT_UN']
+BOT_PW = os.environ['BOT_PW']
+CLI_ID = os.environ['CLI_ID']
+CLI_SC = os.environ['CLI_SC']
 
 
 def main():
@@ -122,5 +122,6 @@ if __name__ == '__main__':
             if e is KeyboardInterrupt:
                 raise e
             else:
-                print('Encountered an error. Restarting.')
-                time.sleep(TIMING * 60)
+				print(e)
+				print('Encountered an error. Restarting.')
+				time.sleep(TIMING * 60)
