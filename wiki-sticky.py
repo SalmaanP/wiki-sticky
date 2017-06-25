@@ -122,6 +122,6 @@ if __name__ == '__main__':
             if e is KeyboardInterrupt:
                 raise e
             else:
-				print(e)
-				print('Encountered an error. Restarting.')
-				time.sleep(TIMING * 60)
+                print(e)
+                print('Encountered an error. Restarting.')
+                time.sleep(TIMING * 60)
