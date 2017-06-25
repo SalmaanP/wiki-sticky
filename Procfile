@@ -1,1 +1,1 @@
-worker: python samacharbot2.py
+worker: python wiki-sticky.py

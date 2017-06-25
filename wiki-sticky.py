@@ -5,14 +5,14 @@ import time
 import praw
 import prawcore
 
-SUBRDT = ''         # Subreddit name
-WIKIPG = ''         # Name of wiki page with URL list
+SUBRDT = os.environ['SUBRDT']         # Subreddit name
+WIKIPG = os.environ['WIKIPG']         # Name of wiki page with URL list
 TIMING = 5          # Minutes between sticky updates
 
-BOT_UN = ''         # Bot username
-BOT_PW = ''         # Bot password
-CLI_ID = ''         # Client ID
-CLI_SC = ''         # Client secret
+BOT_UN = os.environ['BOT_UN']         # Bot username
+BOT_PW = os.environ['BOT_PW']         # Bot password
+CLI_ID = os.environ['CLI_ID']         # Client ID
+CLI_SC = os.environ['CLI_SC']         # Client secret
 
 
 def main():
